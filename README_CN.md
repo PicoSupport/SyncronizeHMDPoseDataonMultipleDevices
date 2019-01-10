@@ -1,7 +1,6 @@
 
 ###  [ `Return | 首页` ](https://github.com/PicoSupport/PicoSupport)
-* [AndroidDemo | 安卓](https://github.com/PicoSupport/PicoSupport/blob/master/android.md)
-* [UnityDemo | Unity3d](https://github.com/PicoSupport/PicoSupport/blob/master/unity.md)
+
 
 ## Unity_Demo_PicoUnityProjectorDemo
 
@@ -75,10 +74,3 @@ cameraTransform.transform.position = new Vector3(x1, y1, z1);
 ## Announcements 注意事项：
 - 在Goblin上使用时，在Pvr_UnitySDK中的Head Pose和Hand Pose选择Three Dof，取消勾选Show SafePanel
 - 在CV上使用时，在Pvr_UnitySDK中的Head Pose和Hand Pose选择Six Dof
-
-## Pico技术支持
-欢迎更多地了解我们，如果您有任何问题，请联系我们。
-Learn about us, and contact us if you have any questions. 
-
-- Email:  support@picovr.com
-- Web:  [https://www.picovr.com/](https://www.picovr.com/)
