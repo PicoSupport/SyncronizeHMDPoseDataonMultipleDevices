@@ -69,8 +69,7 @@ Parameter specification：
 - ClientScene： Assets -> Scenes -> Scene_Client.unity
 - ServerScene： Assets -> Scenes -> Scene_Server.unity
 
-Packaging two scenes，The server runs on a Pico device and the client runs on a PC or Pad.
+- Packaging two scenes，The server runs on a Pico device and the client runs on a PC or Pad.
 
-## Announcements：
 - when using it on **PicoGoblin**, select Three Dof in Head Pose and Hand Pose in Pvr_UnitySDK, and uncheck Show SafePanel
 - when using on **PicoNeo**, select Six Dof in Head Pose and Hand Pose in Pvr_UnitySDK
