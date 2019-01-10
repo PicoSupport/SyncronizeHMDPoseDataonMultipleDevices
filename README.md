@@ -20,16 +20,16 @@ Demo主要C#代码 BatteryManager.cs文件
 
 主要代码：
 1．Server端创建Host：
-```
+```C#
 MasterServer.RegisterHost("PicoNet","Speech");
 ```
 2．Client端获取Host列表：
-	```
+```C#
 MasterServer.ClearHostList();
 MasterServer.RequestHostList("PicoNet");
 ```
 3．Client端获取Server IP：
-```
+```C#
 if(MasterServer.PollHostList().Length != 0)
 {
   HostData[] hostDatas = MasterServer.PollHostList();
@@ -38,7 +38,7 @@ if(MasterServer.PollHostList().Length != 0)
 ```
 更新代码：
 1．增加Server端传递参数
-```
+```C#
 string sendString = 
   cameraTransform.rotation.eulerAngles.x + "," +
   cameraTransform.rotation.eulerAngles.y + "," +
@@ -49,7 +49,7 @@ string sendString =
 networkView.RPC ("RequestMessage", RPCMode.Others, "p",sendString);
 ```
 2．增加Client端接收参数
-```
+```C#
 if(ratations.Length==6){
   x=float.Parse(ratations[0]);
   y=float.Parse(ratations[1]);
