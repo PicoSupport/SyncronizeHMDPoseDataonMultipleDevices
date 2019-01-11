@@ -1,7 +1,7 @@
 <p align="right"><a href="https://github.com/PicoSupport/PicoSupport" target="_blank">Pico Support Home</a></p>
 
 
-## Unity_Demo_PicoUnityProjectorDemo
+## Syncronize HMD Pose Data on Multiple Devices
 
 ## Unity Versions：
 - 2017.1.0f3 and later
