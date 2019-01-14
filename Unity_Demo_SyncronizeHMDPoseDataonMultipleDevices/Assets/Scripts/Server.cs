@@ -77,7 +77,7 @@ public class Server : MonoBehaviour
 
 	void StartServer ()
 	{
-		if (GUILayout.Button ("启动服务器")) {
+		if (GUILayout.Button ("Start the server")) {
 			bool useNat = !Network.HavePublicAddress ();
 			NetworkConnectionError error = Network.InitializeServer (1000, port, useNat);
 			Log.text = "Status:" + error;
@@ -88,8 +88,8 @@ public class Server : MonoBehaviour
 	void OnServer ()
 	{
 		length = Network.connections.Length;
-		OnlineNum.text = "在线人数：" + length;
-		CurrentState.text = "当前状态：" + currentStatus.ToString() + "\n 播放时间：" + alreadyPlayedTime;
+		OnlineNum.text = "Online number：" + length;
+		CurrentState.text = " Current status ：" + currentStatus.ToString() + "\n Time：" + alreadyPlayedTime;
 
 
 //		for (int i=0; i<length; i++) {
@@ -97,22 +97,22 @@ public class Server : MonoBehaviour
 //			GUILayout.Label("IP:"+player.ipAddress+"    Port:"+player.port);
 //		}
 
-		if (GUILayout.Button ("断开服务器")) {
+		if (GUILayout.Button ("Disconnect the server")) {
 			Network.Disconnect ();
 			alreadyPlayedTime = 0;
 			currentStatus=PlayStatus.Ready;
 		}
 
-		if (GUILayout.Button ("播放")) {
+		if (GUILayout.Button ("Play")) {
 			currentStatus = PlayStatus.Playing;
 			networkView.RPC ("RequestMessage", RPCMode.All, "play", "");
 		}
 		
-		if (GUILayout.Button ("暂停")) {
+		if (GUILayout.Button ("Pause")) {
 			currentStatus = PlayStatus.Pause;
 			networkView.RPC ("RequestMessage", RPCMode.All, "pause", "");
 		}
-		if (GUILayout.Button ("重置")) {
+		if (GUILayout.Button ("Reset")) {
 			currentStatus = PlayStatus.Ready;
 			alreadyPlayedTime = 0;
 			networkView.RPC ("RequestMessage", RPCMode.All, "reset", "");

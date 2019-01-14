@@ -67,7 +67,7 @@ public class Client : MonoBehaviour
 
 	public void Online ()
 	{ 
-		if (GUILayout.Button ("断开服务器")) {
+		if (GUILayout.Button ("Disconnect the server")) {
 			Network.Disconnect ();
 		}
 	}
@@ -76,7 +76,7 @@ public class Client : MonoBehaviour
 	public void StartConnect ()
     {
         
-        CurrentLog.text = "开始连接->" + m_ServerIp;
+        CurrentLog.text = "Start connect->" + m_ServerIp;
 		isConnecting = true;
         NetworkConnectionError error = Network.Connect(m_ServerIp, SERVER_PORT);
         CurrentLog.text += "\n Status:" + error;
