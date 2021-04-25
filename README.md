@@ -68,3 +68,6 @@ Parameter specification：
 - ServerScene： Assets -> Scenes -> Scene_Server.unity
 
 - Build two scenes seperately. The server runs on a Pico device and the client runs on a PC or Pad.
+
+## Note:
+- If you have any questions/comments, please raise requests at [**PicoDevSupport Portal**](https://picodevsupport.atlassian.net/servicedesk/customer/user/login?
